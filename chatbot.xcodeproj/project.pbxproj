@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5991DC6D29D48E1100D5D0D4 /* chatbot_frontendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5991DC6C29D48E1100D5D0D4 /* chatbot_frontendApp.swift */; };
+		5991DC6D29D48E1100D5D0D4 /* chatbot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5991DC6C29D48E1100D5D0D4 /* chatbot.swift */; };
 		5991DC6F29D48E1100D5D0D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5991DC6E29D48E1100D5D0D4 /* ContentView.swift */; };
 		5991DC7129D48E1700D5D0D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5991DC7029D48E1700D5D0D4 /* Assets.xcassets */; };
 		5991DC7429D48E1700D5D0D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5991DC7329D48E1700D5D0D4 /* Preview Assets.xcassets */; };
-		5991DC7E29D48E1800D5D0D4 /* chatbot_frontendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5991DC7D29D48E1800D5D0D4 /* chatbot_frontendTests.swift */; };
-		5991DC8829D48E1800D5D0D4 /* chatbot_frontendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5991DC8729D48E1800D5D0D4 /* chatbot_frontendUITests.swift */; };
-		5991DC8A29D48E1800D5D0D4 /* chatbot_frontendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5991DC8929D48E1800D5D0D4 /* chatbot_frontendUITestsLaunchTests.swift */; };
+		5991DC7E29D48E1800D5D0D4 /* chatbotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5991DC7D29D48E1800D5D0D4 /* chatbotTests.swift */; };
+		5991DC8829D48E1800D5D0D4 /* chatbotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5991DC8729D48E1800D5D0D4 /* chatbotUITests.swift */; };
+		5991DC8A29D48E1800D5D0D4 /* chatbotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5991DC8929D48E1800D5D0D4 /* chatbotUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +34,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5991DC6929D48E1100D5D0D4 /* chatbot_frontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatbot_frontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5991DC6C29D48E1100D5D0D4 /* chatbot_frontendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatbot_frontendApp.swift; sourceTree = "<group>"; };
+		5991DC6929D48E1100D5D0D4 /* chatbot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatbot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5991DC6C29D48E1100D5D0D4 /* chatbot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatbot.swift; sourceTree = "<group>"; };
 		5991DC6E29D48E1100D5D0D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5991DC7029D48E1700D5D0D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5991DC7329D48E1700D5D0D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5991DC7929D48E1800D5D0D4 /* chatbot_frontendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatbot_frontendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5991DC7D29D48E1800D5D0D4 /* chatbot_frontendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatbot_frontendTests.swift; sourceTree = "<group>"; };
-		5991DC8329D48E1800D5D0D4 /* chatbot_frontendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatbot_frontendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5991DC8729D48E1800D5D0D4 /* chatbot_frontendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatbot_frontendUITests.swift; sourceTree = "<group>"; };
-		5991DC8929D48E1800D5D0D4 /* chatbot_frontendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatbot_frontendUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5991DC7929D48E1800D5D0D4 /* chatbotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatbotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5991DC7D29D48E1800D5D0D4 /* chatbotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatbotTests.swift; sourceTree = "<group>"; };
+		5991DC8329D48E1800D5D0D4 /* chatbotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatbotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5991DC8729D48E1800D5D0D4 /* chatbotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatbotUITests.swift; sourceTree = "<group>"; };
+		5991DC8929D48E1800D5D0D4 /* chatbotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatbotUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +74,9 @@
 		5991DC6029D48E1100D5D0D4 = {
 			isa = PBXGroup;
 			children = (
-				5991DC6B29D48E1100D5D0D4 /* chatbot_frontend */,
-				5991DC7C29D48E1800D5D0D4 /* chatbot_frontendTests */,
-				5991DC8629D48E1800D5D0D4 /* chatbot_frontendUITests */,
+				5991DC6B29D48E1100D5D0D4 /* chatbot */,
+				5991DC7C29D48E1800D5D0D4 /* chatbotTests */,
+				5991DC8629D48E1800D5D0D4 /* chatbotUITests */,
 				5991DC6A29D48E1100D5D0D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,22 +84,22 @@
 		5991DC6A29D48E1100D5D0D4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5991DC6929D48E1100D5D0D4 /* chatbot_frontend.app */,
-				5991DC7929D48E1800D5D0D4 /* chatbot_frontendTests.xctest */,
-				5991DC8329D48E1800D5D0D4 /* chatbot_frontendUITests.xctest */,
+				5991DC6929D48E1100D5D0D4 /* chatbot.app */,
+				5991DC7929D48E1800D5D0D4 /* chatbotTests.xctest */,
+				5991DC8329D48E1800D5D0D4 /* chatbotUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5991DC6B29D48E1100D5D0D4 /* chatbot_frontend */ = {
+		5991DC6B29D48E1100D5D0D4 /* chatbot */ = {
 			isa = PBXGroup;
 			children = (
-				5991DC6C29D48E1100D5D0D4 /* chatbot_frontendApp.swift */,
+				5991DC6C29D48E1100D5D0D4 /* chatbot.swift */,
 				5991DC6E29D48E1100D5D0D4 /* ContentView.swift */,
 				5991DC7029D48E1700D5D0D4 /* Assets.xcassets */,
 				5991DC7229D48E1700D5D0D4 /* Preview Content */,
 			);
-			path = chatbot_frontend;
+			path = chatbot;
 			sourceTree = "<group>";
 		};
 		5991DC7229D48E1700D5D0D4 /* Preview Content */ = {
@@ -110,29 +110,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5991DC7C29D48E1800D5D0D4 /* chatbot_frontendTests */ = {
+		5991DC7C29D48E1800D5D0D4 /* chatbotTests */ = {
 			isa = PBXGroup;
 			children = (
-				5991DC7D29D48E1800D5D0D4 /* chatbot_frontendTests.swift */,
+				5991DC7D29D48E1800D5D0D4 /* chatbotTests.swift */,
 			);
-			path = chatbot_frontendTests;
+			path = chatbotTests;
 			sourceTree = "<group>";
 		};
-		5991DC8629D48E1800D5D0D4 /* chatbot_frontendUITests */ = {
+		5991DC8629D48E1800D5D0D4 /* chatbotUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5991DC8729D48E1800D5D0D4 /* chatbot_frontendUITests.swift */,
-				5991DC8929D48E1800D5D0D4 /* chatbot_frontendUITestsLaunchTests.swift */,
+				5991DC8729D48E1800D5D0D4 /* chatbotUITests.swift */,
+				5991DC8929D48E1800D5D0D4 /* chatbotUITestsLaunchTests.swift */,
 			);
-			path = chatbot_frontendUITests;
+			path = chatbotUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5991DC6829D48E1100D5D0D4 /* chatbot_frontend */ = {
+		5991DC6829D48E1100D5D0D4 /* chatbot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5991DC8D29D48E1800D5D0D4 /* Build configuration list for PBXNativeTarget "chatbot_frontend" */;
+			buildConfigurationList = 5991DC8D29D48E1800D5D0D4 /* Build configuration list for PBXNativeTarget "chatbot" */;
 			buildPhases = (
 				5991DC6529D48E1100D5D0D4 /* Sources */,
 				5991DC6629D48E1100D5D0D4 /* Frameworks */,
@@ -142,14 +142,14 @@
 			);
 			dependencies = (
 			);
-			name = chatbot_frontend;
+			name = chatbot;
 			productName = chatbot_frontend;
-			productReference = 5991DC6929D48E1100D5D0D4 /* chatbot_frontend.app */;
+			productReference = 5991DC6929D48E1100D5D0D4 /* chatbot.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5991DC7829D48E1800D5D0D4 /* chatbot_frontendTests */ = {
+		5991DC7829D48E1800D5D0D4 /* chatbotTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5991DC9029D48E1800D5D0D4 /* Build configuration list for PBXNativeTarget "chatbot_frontendTests" */;
+			buildConfigurationList = 5991DC9029D48E1800D5D0D4 /* Build configuration list for PBXNativeTarget "chatbotTests" */;
 			buildPhases = (
 				5991DC7529D48E1800D5D0D4 /* Sources */,
 				5991DC7629D48E1800D5D0D4 /* Frameworks */,
@@ -160,14 +160,14 @@
 			dependencies = (
 				5991DC7B29D48E1800D5D0D4 /* PBXTargetDependency */,
 			);
-			name = chatbot_frontendTests;
+			name = chatbotTests;
 			productName = chatbot_frontendTests;
-			productReference = 5991DC7929D48E1800D5D0D4 /* chatbot_frontendTests.xctest */;
+			productReference = 5991DC7929D48E1800D5D0D4 /* chatbotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5991DC8229D48E1800D5D0D4 /* chatbot_frontendUITests */ = {
+		5991DC8229D48E1800D5D0D4 /* chatbotUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5991DC9329D48E1800D5D0D4 /* Build configuration list for PBXNativeTarget "chatbot_frontendUITests" */;
+			buildConfigurationList = 5991DC9329D48E1800D5D0D4 /* Build configuration list for PBXNativeTarget "chatbotUITests" */;
 			buildPhases = (
 				5991DC7F29D48E1800D5D0D4 /* Sources */,
 				5991DC8029D48E1800D5D0D4 /* Frameworks */,
@@ -178,9 +178,9 @@
 			dependencies = (
 				5991DC8529D48E1800D5D0D4 /* PBXTargetDependency */,
 			);
-			name = chatbot_frontendUITests;
+			name = chatbotUITests;
 			productName = chatbot_frontendUITests;
-			productReference = 5991DC8329D48E1800D5D0D4 /* chatbot_frontendUITests.xctest */;
+			productReference = 5991DC8329D48E1800D5D0D4 /* chatbotUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5991DC6429D48E1100D5D0D4 /* Build configuration list for PBXProject "chatbot_frontend" */;
+			buildConfigurationList = 5991DC6429D48E1100D5D0D4 /* Build configuration list for PBXProject "chatbot" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +219,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5991DC6829D48E1100D5D0D4 /* chatbot_frontend */,
-				5991DC7829D48E1800D5D0D4 /* chatbot_frontendTests */,
-				5991DC8229D48E1800D5D0D4 /* chatbot_frontendUITests */,
+				5991DC6829D48E1100D5D0D4 /* chatbot */,
+				5991DC7829D48E1800D5D0D4 /* chatbotTests */,
+				5991DC8229D48E1800D5D0D4 /* chatbotUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,7 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5991DC6F29D48E1100D5D0D4 /* ContentView.swift in Sources */,
-				5991DC6D29D48E1100D5D0D4 /* chatbot_frontendApp.swift in Sources */,
+				5991DC6D29D48E1100D5D0D4 /* chatbot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5991DC7E29D48E1800D5D0D4 /* chatbot_frontendTests.swift in Sources */,
+				5991DC7E29D48E1800D5D0D4 /* chatbotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5991DC8A29D48E1800D5D0D4 /* chatbot_frontendUITestsLaunchTests.swift in Sources */,
-				5991DC8829D48E1800D5D0D4 /* chatbot_frontendUITests.swift in Sources */,
+				5991DC8A29D48E1800D5D0D4 /* chatbotUITestsLaunchTests.swift in Sources */,
+				5991DC8829D48E1800D5D0D4 /* chatbotUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +284,12 @@
 /* Begin PBXTargetDependency section */
 		5991DC7B29D48E1800D5D0D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5991DC6829D48E1100D5D0D4 /* chatbot_frontend */;
+			target = 5991DC6829D48E1100D5D0D4 /* chatbot */;
 			targetProxy = 5991DC7A29D48E1800D5D0D4 /* PBXContainerItemProxy */;
 		};
 		5991DC8529D48E1800D5D0D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5991DC6829D48E1100D5D0D4 /* chatbot_frontend */;
+			target = 5991DC6829D48E1100D5D0D4 /* chatbot */;
 			targetProxy = 5991DC8429D48E1800D5D0D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -420,6 +420,7 @@
 				DEVELOPMENT_TEAM = BA2YYF8Y67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +450,7 @@
 				DEVELOPMENT_TEAM = BA2YYF8Y67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -483,7 +485,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chatbot_frontend.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/chatbot_frontend";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chatbot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/chatbot";
 			};
 			name = Debug;
 		};
@@ -503,7 +505,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chatbot_frontend.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/chatbot_frontend";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chatbot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/chatbot";
 			};
 			name = Release;
 		};
@@ -546,7 +548,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5991DC6429D48E1100D5D0D4 /* Build configuration list for PBXProject "chatbot_frontend" */ = {
+		5991DC6429D48E1100D5D0D4 /* Build configuration list for PBXProject "chatbot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5991DC8B29D48E1800D5D0D4 /* Debug */,
@@ -555,7 +557,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5991DC8D29D48E1800D5D0D4 /* Build configuration list for PBXNativeTarget "chatbot_frontend" */ = {
+		5991DC8D29D48E1800D5D0D4 /* Build configuration list for PBXNativeTarget "chatbot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5991DC8E29D48E1800D5D0D4 /* Debug */,
@@ -564,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5991DC9029D48E1800D5D0D4 /* Build configuration list for PBXNativeTarget "chatbot_frontendTests" */ = {
+		5991DC9029D48E1800D5D0D4 /* Build configuration list for PBXNativeTarget "chatbotTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5991DC9129D48E1800D5D0D4 /* Debug */,
@@ -573,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5991DC9329D48E1800D5D0D4 /* Build configuration list for PBXNativeTarget "chatbot_frontendUITests" */ = {
+		5991DC9329D48E1800D5D0D4 /* Build configuration list for PBXNativeTarget "chatbotUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5991DC9429D48E1800D5D0D4 /* Debug */,

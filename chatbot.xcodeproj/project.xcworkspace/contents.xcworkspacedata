@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/christoph/Code_Repositories/CODE/chatbot/chatbot_frontend/chatbot.xcodeproj">
    </FileRef>
 </Workspace>
