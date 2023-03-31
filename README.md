@@ -21,3 +21,33 @@ There needs to be a button
 
 
 
+
+
+### List of chat Partners
+
+Steve Jobs
+Phil Knight
+Napoleon Bonaparte
+Jesus of Nazareth
+Confucius
+Sheryl Sandberg
+Mother Teresa
+Christian God of the old testment
+Oprah Winfrey
+Abraham Lincoln
+Julius Caesar
+Sun Tzu
+Ruth Bader Ginsburg
+Mahatma Gandhi
+Karl Marx
+Galileo Galilei
+George Washington
+Martin Luther King Jr.
+Bill Gates
+Confucius
+Muhammad Ali
+Plato
+Nelson Mandela
+Winston Churchill
+Aristotle
+Queen Elizabeth II
