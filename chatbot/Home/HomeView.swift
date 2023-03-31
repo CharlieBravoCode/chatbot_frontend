@@ -1,85 +1,52 @@
 import SwiftUI
 
-#if DEBUG
-import UIKit
-
-extension UIApplication {
-    static let isRunningInPreview = UIDevice.current.name.contains("Preview")
-}
-#endif
-
 struct HomeView: View {
     @StateObject private var viewModel = ViewModel() // Updates the view when something is changed
-    
+
     @EnvironmentObject var userData: UserData
-    
+
     var body: some View {
-        VStack {
-            PageHeader(titleName: "Home")
-            HStack {
-                VStack(alignment: .leading, spacing: 20) {
-                    HStack {
-                        Text("User ID:")
-                            .font(.system(size: 20, weight: .bold))
-                        Text("\(viewModel.user_id)")
-                            .font(.system(size: 20))
-                    }
-                    HStack {
-                        Text("Username:")
-                            .font(.system(size: 20, weight: .bold))
-                        Text("\(viewModel.username)")
-                            .font(.system(size: 20))
-                    }
-                    HStack {
-                        Text("Location:")
-                            .font(.system(size: 20, weight: .bold))
-                        Text("\(viewModel.location)")
-                            .font(.system(size: 20))
-                    }
-                }.padding([.leading], 40)
-                Spacer()
+        NavigationView {
+            List(viewModel.conversations) { conversation in
+                ConversationRow(conversation: conversation)
             }
-            
-            SubmitButton(text: "Logout", submitAction: viewModel.logout)
-                .padding([.top], 15)
-            
-            Spacer()
-        }.onAppear {
-            viewModel.initUserData(userData)
-            
-            #if DEBUG
-            if !UIApplication.isRunningInPreview {
+            .navigationTitle("Conversations")
+            .onAppear {
+                viewModel.initUserData(userData)
                 Task {
-                    await viewModel.getUserData()
-                    viewModel.updateDisplay()
+                    await viewModel.getConversations()
                 }
             }
-            #else
-            Task {
-                await viewModel.getUserData()
-                viewModel.updateDisplay()
-            }
-            #endif
         }
     }
-    
+}
+
+struct ConversationRow: View {
+    let conversation: Conversation
+
+    var body: some View {
+        HStack {
+            Image(conversation.contact.profilePicture)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 60, height: 60)
+                .clipShape(Circle())
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text(conversation.contact.name)
+                    .font(.headline)
+                Text(conversation.lastMessage)
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+            }
+            Spacer()
+        }
+        .padding(.vertical, 8)
+    }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-            .environmentObject(createMockUserData())
-    }
-    
-    static func createMockUserData() -> UserData {
-        let mockUserData = UserData()
-        mockUserData.user_id = 1
-        mockUserData.username = "JohnDoe"
-        mockUserData.location = "New York"
-        mockUserData.authToken = "mock_token"
-        
-        return mockUserData
     }
 }
-
-

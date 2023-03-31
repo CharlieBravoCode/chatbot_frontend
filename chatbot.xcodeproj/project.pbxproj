@@ -28,6 +28,10 @@
 		59D7C6F029D6D08E009FB9D3 /* ViewableSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7C6EF29D6D08E009FB9D3 /* ViewableSecureField.swift */; };
 		59D7C6F229D6D0B1009FB9D3 /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7C6F129D6D0B1009FB9D3 /* SubmitButton.swift */; };
 		59D7C6F429D6D0C8009FB9D3 /* BlurredBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7C6F329D6D0C8009FB9D3 /* BlurredBackground.swift */; };
+		59D7C6FA29D6F530009FB9D3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7C6F929D6F530009FB9D3 /* SettingsView.swift */; };
+		59D7C6FC29D6F542009FB9D3 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7C6FB29D6F542009FB9D3 /* SettingsViewModel.swift */; };
+		59D7C6FE29D6F553009FB9D3 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7C6FD29D6F553009FB9D3 /* SettingsService.swift */; };
+		59D7C70029D6F8B8009FB9D3 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7C6FF29D6F8B8009FB9D3 /* HomeModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +59,10 @@
 		59D7C6F129D6D0B1009FB9D3 /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 		59D7C6F329D6D0C8009FB9D3 /* BlurredBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredBackground.swift; sourceTree = "<group>"; };
 		59D7C6F729D6E8DC009FB9D3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		59D7C6F929D6F530009FB9D3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		59D7C6FB29D6F542009FB9D3 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		59D7C6FD29D6F553009FB9D3 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
+		59D7C6FF29D6F8B8009FB9D3 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,7 @@
 				59D7C6CA29D6CCAA009FB9D3 /* Models */,
 				59D7C6CB29D6CCF3009FB9D3 /* Services */,
 				59D7C6CC29D6CD4C009FB9D3 /* Info.plist */,
+				59D7C6F829D6F506009FB9D3 /* Settings */,
 				59D7C6CE29D6CD66009FB9D3 /* Home */,
 				59D7C6CF29D6CD7E009FB9D3 /* Authentication */,
 				59D7C6D029D6CD8C009FB9D3 /* Components */,
@@ -115,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				59D7C6D329D6CDE1009FB9D3 /* UserData.swift */,
+				59D7C6FF29D6F8B8009FB9D3 /* HomeModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +186,16 @@
 				59D7C6E329D6CFFC009FB9D3 /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		59D7C6F829D6F506009FB9D3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				59D7C6F929D6F530009FB9D3 /* SettingsView.swift */,
+				59D7C6FB29D6F542009FB9D3 /* SettingsViewModel.swift */,
+				59D7C6FD29D6F553009FB9D3 /* SettingsService.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +273,8 @@
 				59D7C6E829D6D02D009FB9D3 /* AuthenticationViewModel.swift in Sources */,
 				59D7C6DA29D6CF2B009FB9D3 /* HomeService.swift in Sources */,
 				5991DC6F29D48E1100D5D0D4 /* ContentView.swift in Sources */,
+				59D7C70029D6F8B8009FB9D3 /* HomeModels.swift in Sources */,
+				59D7C6FA29D6F530009FB9D3 /* SettingsView.swift in Sources */,
 				59D7C6EE29D6D080009FB9D3 /* CaptionedTextField.swift in Sources */,
 				59D7C6E629D6D01B009FB9D3 /* AuthenticationView.swift in Sources */,
 				59D7C6E429D6CFFC009FB9D3 /* LoginViewModel.swift in Sources */,
@@ -265,8 +287,10 @@
 				59D7C6DF29D6CF7E009FB9D3 /* RegisterViewModel.swift in Sources */,
 				59D7C6E229D6CFE1009FB9D3 /* LoginView.swift in Sources */,
 				59D7C6F429D6D0C8009FB9D3 /* BlurredBackground.swift in Sources */,
+				59D7C6FE29D6F553009FB9D3 /* SettingsService.swift in Sources */,
 				5991DC6D29D48E1100D5D0D4 /* chatbot.swift in Sources */,
 				59D7C6EA29D6D042009FB9D3 /* AuthenticationService.swift in Sources */,
+				59D7C6FC29D6F542009FB9D3 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
