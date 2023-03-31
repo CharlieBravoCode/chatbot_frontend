@@ -1,10 +1,3 @@
-//
-//  PageHeader.swift
-//  chatbot
-//
-//  Created by Christoph Brauer
-
-
 import SwiftUI
 
 struct PageHeader: View {

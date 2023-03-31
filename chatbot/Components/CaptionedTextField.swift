@@ -1,10 +1,3 @@
-//
-//  CaptionedTextField.swift
-//  chatbot
-//
-//  Created by Christoph Brauer
-//
-
 import SwiftUI
 
 struct CaptionedTextField: View {

@@ -15,7 +15,7 @@ struct AuthenticationView: View {
                         Button(action: { self.changeScreen() }) {
                             Text("Sign Up")
                                 .font(.system(size: 20, weight: .bold))
-                                .foregroundColor(Color.green)
+                                .foregroundColor(Color.blue)
                         }
                     }
                 }
@@ -29,7 +29,7 @@ struct AuthenticationView: View {
                     Button(action: { self.changeScreen() }) {
                         Text("Sign In")
                             .font(.system(size: 20, weight: .bold))
-                            .foregroundColor(Color.green)
+                            .foregroundColor(Color.blue)
                     }.padding([.leading], -2)
                 }.padding([.top], 10)
             }

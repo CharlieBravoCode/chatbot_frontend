@@ -1,10 +1,3 @@
-//
-//  SubmitButton.swift
-//  chatbot
-//
-//  Created by Christoph Brauer on 31.03.23.
-//
-
 import SwiftUI
 
 struct SubmitButton: View {

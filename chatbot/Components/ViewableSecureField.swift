@@ -1,10 +1,3 @@
-//
-//  ViewableSecureField.swift
-//  chatbot
-//
-//  Created by Christoph Brauer
-//
-
 import SwiftUI
 
 struct ViewableSecureField: View {
