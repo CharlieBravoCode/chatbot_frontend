@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var userData: UserData
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, worldd!")
+        if userData.authToken == "" {
+            AuthenticationView()
+        } else {
+            HomeView()
         }
-        .padding()
     }
 }
 
