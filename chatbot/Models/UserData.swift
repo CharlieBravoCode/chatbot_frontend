@@ -1,10 +1,3 @@
-//
-//  UserData.swift
-//  chatbot
-//
-//  Created by Christoph Brauer
-//
-
 import Foundation
 
 class UserData: ObservableObject {

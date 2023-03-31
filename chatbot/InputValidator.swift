@@ -1,10 +1,3 @@
-//
-//  InputValidator.swift
-//  chatbot
-//
-//  Created by Christoph Brauer
-//
-
 import Foundation
 
 class InputValidator {

@@ -1,10 +1,3 @@
-//
-//  HomeViewModel.swift
-//  chatbot
-//
-//  Created by Christoph Brauer
-//
-
 import Foundation
 
 extension HomeView {

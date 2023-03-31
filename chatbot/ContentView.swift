@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  chatbot_frontend
-//
-//  Created by Christoph Brauer on 29.03.23.
-//
-
 import SwiftUI
 
 struct ContentView: View {

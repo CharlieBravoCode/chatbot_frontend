@@ -1,10 +1,3 @@
-//
-//  AuthenticationService.swift
-//  chatbot
-//
-//  Created by Christoph Brauer on 31.03.23.
-//
-
 import Foundation
 
 fileprivate struct LoginResponse: Decodable {
