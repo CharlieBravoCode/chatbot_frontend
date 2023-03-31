@@ -54,6 +54,7 @@
 		59D7C6EF29D6D08E009FB9D3 /* ViewableSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewableSecureField.swift; sourceTree = "<group>"; };
 		59D7C6F129D6D0B1009FB9D3 /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 		59D7C6F329D6D0C8009FB9D3 /* BlurredBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredBackground.swift; sourceTree = "<group>"; };
+		59D7C6F729D6E8DC009FB9D3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +71,7 @@
 		5991DC6029D48E1100D5D0D4 = {
 			isa = PBXGroup;
 			children = (
+				59D7C6F729D6E8DC009FB9D3 /* README.md */,
 				5991DC6B29D48E1100D5D0D4 /* chatbot */,
 				5991DC6A29D48E1100D5D0D4 /* Products */,
 			);
