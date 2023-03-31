@@ -20,7 +20,7 @@ struct SubmitButton: View {
                 .font(.system(size: 26, weight: .medium))
                 .foregroundColor(Color.white)
                 .frame(width: 310, height: 60)
-                .background(Color.green)
+                .background(Color.blue)
                 .cornerRadius(12)
         }
     }

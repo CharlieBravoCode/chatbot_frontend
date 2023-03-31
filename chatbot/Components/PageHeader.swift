@@ -21,7 +21,7 @@ struct PageHeader: View {
                 Spacer()
             }
             .frame(maxWidth: .infinity)
-            .background(Color.green)
+            .background(Color.blue)
         }
     }
 }
