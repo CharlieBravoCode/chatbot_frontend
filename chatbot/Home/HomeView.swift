@@ -5,8 +5,6 @@ struct HomeView: View {
 
     @EnvironmentObject var userData: UserData
 
-    @State private var showSettingsView = false
-
     var body: some View {
         NavigationView {
             List(viewModel.conversations) { conversation in
@@ -15,18 +13,12 @@ struct HomeView: View {
             .navigationTitle("Conversations")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        showSettingsView = true
-                    }) {
+                    NavigationLink(destination: SettingsView().environmentObject(userData)) {
                         Image(systemName: "gear")
                             .resizable()
                             .frame(width: 22, height: 22)
                     }
                 }
-            }
-            .sheet(isPresented: $showSettingsView) {
-                SettingsView()
-                    .environmentObject(userData)
             }
             .onAppear {
                 viewModel.initUserData(userData)

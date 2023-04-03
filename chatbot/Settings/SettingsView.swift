@@ -12,62 +12,52 @@ struct SettingsView: View {
     @StateObject private var viewModel = ViewModel() // Updates the view when something is changed
     
     @EnvironmentObject var userData: UserData
-    
+
     var body: some View {
-        VStack {
-            PageHeader(titleName: "Settings")
-            HStack {
-                VStack(alignment: .leading, spacing: 20) {
-                    HStack {
-                        Text("User ID:")
-                            .font(.system(size: 20, weight: .bold))
-                        Text("\(viewModel.user_id)")
-                            .font(.system(size: 20))
-                    }
+        NavigationView {
+            List {
+                Section {
                     HStack {
                         Text("Username:")
                             .font(.system(size: 20, weight: .bold))
+                        Spacer()
                         Text("\(viewModel.username)")
                             .font(.system(size: 20))
                     }
-                    HStack {
-                        Text("Location:")
-                            .font(.system(size: 20, weight: .bold))
-                        Text("\(viewModel.location)")
-                            .font(.system(size: 20))
+                }
+                Section {
+                    Button(action: viewModel.logout) {
+                        Text("Logout")
+                            .foregroundColor(.red)
                     }
-                }.padding([.leading], 40)
-                Spacer()
+                }
             }
-            
-            SubmitButton(text: "Logout", submitAction: viewModel.logout)
-                .padding([.top], 15)
-            
-            Spacer()
-        }.onAppear {
-            viewModel.initUserData(userData)
-            
-            #if DEBUG
-            if !UIApplication.isRunningInPreview {
+            .listStyle(GroupedListStyle())
+            .navigationTitle("Settings")
+            .onAppear {
+                viewModel.initUserData(userData)
+
+                #if DEBUG
+                if !UIApplication.isRunningInPreview {
+                    Task {
+                        await viewModel.getUserData()
+                        viewModel.updateDisplay()
+                    }
+                }
+                #else
                 Task {
                     await viewModel.getUserData()
                     viewModel.updateDisplay()
                 }
+                #endif
             }
-            #else
-            Task {
-                await viewModel.getUserData()
-                viewModel.updateDisplay()
-            }
-            #endif
         }
     }
-    
 }
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        SettingsView()
             .environmentObject(createMockUserData())
     }
     
@@ -81,5 +71,3 @@ struct SettingsView_Previews: PreviewProvider {
         return mockUserData
     }
 }
-
-
