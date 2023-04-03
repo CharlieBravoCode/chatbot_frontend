@@ -1,14 +1,15 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject private var viewModel = ViewModel() // Updates the view when something is changed
-
+    @StateObject private var viewModel = ViewModel()
     @EnvironmentObject var userData: UserData
 
     var body: some View {
         NavigationView {
             List(viewModel.conversations) { conversation in
-                ConversationRow(conversation: conversation)
+                NavigationLink(destination: ChatView(contact: conversation.contact)) {
+                    ConversationRow(conversation: conversation)
+                }
             }
             .navigationTitle("Conversations")
             .toolbar {

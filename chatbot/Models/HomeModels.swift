@@ -2,11 +2,11 @@ import Foundation
 
 struct Conversation: Identifiable, Decodable {
     let id: UUID
-    let contact: Contact
+    let contact: ChatContact
     let lastMessage: String
 }
 
-struct Contact: Decodable {
+struct ChatContact: Identifiable, Decodable {
     let id: UUID
     let name: String
     let profilePicture: String
