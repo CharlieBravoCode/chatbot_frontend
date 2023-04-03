@@ -25,10 +25,15 @@ There needs to be a button
 
 ### List of chat Partners
 
-Steve Jobs
+Steve Jobs (Steve J.)
 Phil Knight
 Napoleon Bonaparte
 Jesus of Nazareth
+Eminem (Rapper Em')
+Yoda (Master Y)
+Vito Corleone (The Godfather)
+Hannibal Lecter
+Mr. Miyagi in The Karate Kid
 Confucius
 Sheryl Sandberg
 Mother Teresa

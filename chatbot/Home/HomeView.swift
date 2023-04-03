@@ -5,21 +5,40 @@ struct HomeView: View {
 
     @EnvironmentObject var userData: UserData
 
+    @State private var showSettingsView = false
+
     var body: some View {
         NavigationView {
             List(viewModel.conversations) { conversation in
                 ConversationRow(conversation: conversation)
             }
             .navigationTitle("Conversations")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        showSettingsView = true
+                    }) {
+                        Image(systemName: "gear")
+                            .resizable()
+                            .frame(width: 22, height: 22)
+                    }
+                }
+            }
+            .sheet(isPresented: $showSettingsView) {
+                SettingsView()
+                    .environmentObject(userData)
+            }
             .onAppear {
                 viewModel.initUserData(userData)
                 Task {
+                    viewModel.loadSampleConversations()
                     await viewModel.getConversations()
                 }
             }
         }
     }
 }
+
 
 struct ConversationRow: View {
     let conversation: Conversation
