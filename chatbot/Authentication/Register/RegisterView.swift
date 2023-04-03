@@ -16,7 +16,7 @@ struct RegisterView: View {
                     .foregroundColor(Color.red)
                     
             }
-            SubmitButton(text: "Create Account", submitAction: { await viewModel.attemptCreateAccount(userData: userData)})
+            SubmitButton(text: "Create Account", backgroundColor: Color.blue, submitAction: { await viewModel.attemptCreateAccount(userData: userData)})
         }.fullScreenCover(isPresented: $viewModel.isLoading) {
             ZStack {
                 Color.black.opacity(0.1)

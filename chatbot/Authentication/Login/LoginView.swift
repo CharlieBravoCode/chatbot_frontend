@@ -23,7 +23,7 @@ struct LoginView: View {
                     .font(.system(size: 16, weight: .medium))
                     .foregroundColor(Color.red)
             }
-            SubmitButton(text: "Login", submitAction: { await viewModel.attemptLogin(userData: self.userData )})
+            SubmitButton(text: "Login", backgroundColor: Color.blue, submitAction: { await viewModel.attemptLogin(userData: self.userData )})
                 .padding([.top], 7)
         }.fullScreenCover(isPresented: $viewModel.isLoading) {
             ZStack {
