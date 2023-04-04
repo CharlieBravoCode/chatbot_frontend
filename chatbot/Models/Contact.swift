@@ -1,7 +1,7 @@
 import Foundation
 
 struct Contact: Identifiable {
-    let id: Int
+    let id: UUID
     let name: String
     let profilePicture: String
 }
