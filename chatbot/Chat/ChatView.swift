@@ -12,22 +12,24 @@ struct ChatView: View {
     var body: some View {
         VStack {
             HStack {
-                Circle()
-                    .fill(Color.green)
-                    .frame(width: 10, height: 10)
-
-                Text("Placeholder Name")
-                    .font(.headline)
-                    .foregroundColor(.white)
+                Spacer()
+                
+                VStack {
+                    Image(contact.profilePicture)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 60, height: 60)
+                        .clipShape(Circle())
+                    
+                    Text(contact.name)
+                        .font(.headline)
+                        .foregroundColor(.black)
+                }
 
                 Spacer()
-
-                Text("...")
-                    .font(.footnote)
-                    .foregroundColor(.white)
             }
             .padding()
-            .background(Color(red: 0.1, green: 0.1, blue: 0.1))
+            .background(Color.black.opacity(0.05))
 
             ScrollView {
                 VStack(spacing: 3) {
@@ -59,7 +61,3 @@ struct ChatView: View {
         .padding()
     }
 }
-
-
-
-
