@@ -120,9 +120,9 @@
 			children = (
 				59A4474D29DC2EE000ED477A /* UserDefaults */,
 				59D7C6CA29D6CCAA009FB9D3 /* Models */,
-				59D7C6CB29D6CCF3009FB9D3 /* Services */,
 				59D7C6D029D6CD8C009FB9D3 /* Components */,
 				59D7C6CC29D6CD4C009FB9D3 /* Info.plist */,
+				59A4475029DC54EB00ED477A /* Security */,
 				59D7C6CF29D6CD7E009FB9D3 /* Authentication */,
 				59D7C6CE29D6CD66009FB9D3 /* Home */,
 				59D7C70129DAEF83009FB9D3 /* Chat */,
@@ -131,7 +131,6 @@
 				5991DC6E29D48E1100D5D0D4 /* ContentView.swift */,
 				5991DC7029D48E1700D5D0D4 /* Assets.xcassets */,
 				5991DC7229D48E1700D5D0D4 /* Preview Content */,
-				59D7C6D129D6CDB0009FB9D3 /* InputValidator.swift */,
 			);
 			path = chatbot;
 			sourceTree = "<group>";
@@ -152,6 +151,14 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
+		59A4475029DC54EB00ED477A /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				59D7C6D129D6CDB0009FB9D3 /* InputValidator.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
 		59D7C6CA29D6CCAA009FB9D3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,13 +171,6 @@
 				59D7C71529DB216B009FB9D3 /* save.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		59D7C6CB29D6CCF3009FB9D3 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		59D7C6CE29D6CD66009FB9D3 /* Home */ = {

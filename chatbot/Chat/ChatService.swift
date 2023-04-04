@@ -24,6 +24,9 @@ class ChatService: ObservableObject {
         
         let chatSessionInfo = UserDefaults.standard.codableObject(dataType: ChatSessionInfo.self, key: "chatSessionInfo")
         
+        messages.append(MessageModel(text: "Hi \(userName)", isCurrentUser: false, id: UUID()))
+        
+        
         if (chatSessionInfo != nil) {
             
             //get current date
