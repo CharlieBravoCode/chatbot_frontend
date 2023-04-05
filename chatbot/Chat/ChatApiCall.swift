@@ -1,7 +1,7 @@
 import Foundation
 class GptChatClient {
 
-    private let url: URL = URL(string: "http://127.0.0.1:1234/mobile_v1_3JzJkq6mvZ4A2U8BDokUtDKFlV1sVBwl/chat")!
+    private let url: URL = URL(string: "https://chatbot-backend-chat-ie3g6rdoga-ez.a.run.app/mobile_v1_3JzJkq6mvZ4A2U8BDokUtDKFlV1sVBwl/chat")!
     private let urlSession: URLSession = .shared
 
     private let encoder = JSONEncoder()
@@ -14,6 +14,7 @@ class GptChatClient {
             URLQueryItem(name: "userName", value: data.gptPayload.userName),
             URLQueryItem(name: "personaName", value: data.gptPayload.personaName),
             URLQueryItem(name: "userInput", value: data.gptPayload.personaName),
+            URLQueryItem(name: "chatType", value: "INITIAL"),
         ]
         
         guard let finalURL = urlComponents?.url else {

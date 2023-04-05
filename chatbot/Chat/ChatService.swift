@@ -83,7 +83,6 @@ class ChatService: ObservableObject {
         
         
         if newMessage.trimmingCharacters(in: .whitespaces).isEmpty {
-             //Show an error message or alert the user that the question is
             return
         }
         messages.append(MessageModel(text: newMessage, isCurrentUser: true, id: UUID()))
