@@ -1,8 +1,7 @@
 import SwiftUI
 
 struct ChatView: View {
-    
-    @StateObject var vm = ChatService(userName: UserDefaults.userSettings.userName, personaName: UserDefaults.userSettings.personaName, userInput: UserDefaults.userSettings.userInput)
+    @StateObject var vm = ChatService(userName: UserDefaults.userSettings.userName, personaName: UserDefaults.userSettings.personaName)
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     let contact: ChatContact
