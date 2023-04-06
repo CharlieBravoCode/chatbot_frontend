@@ -1,11 +1,5 @@
-//
-//  LoginViewModel.swift
-//  chatbot
-//
-//  Created by Christoph Brauer on 31.03.23.
-//
-
 import Foundation
+import Combine
 
 
 extension LoginView {
@@ -19,7 +13,6 @@ extension LoginView {
         
         @Published var isLoading: Bool = false
         
-        
         func attemptLogin(userData: UserData) async {
             isLoading = true
             defer {
@@ -28,6 +21,7 @@ extension LoginView {
             do {
                 let token = try await AuthenticationService().login(username, password)
                 userData.authToken = token
+                userData.username = username // Set the username in userData
             } catch let error {
                 if type(of: error) == AuthenticationService.self.AuthenticationError.self {
                     errorMessage = error.localizedDescription
@@ -40,4 +34,3 @@ extension LoginView {
         }
     }
 }
-

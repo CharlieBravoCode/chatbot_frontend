@@ -1,11 +1,5 @@
-//
-//  LoginView.swift
-//  chatbot
-//
-//  Created by Christoph Brauer
-//
-
 import SwiftUI
+import Combine
 
 struct LoginView: View {
     @EnvironmentObject var userData: UserData
@@ -43,4 +37,5 @@ struct LoginView_Previews: PreviewProvider {
         LoginView()
     }
 }
+
 
