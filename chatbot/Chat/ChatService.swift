@@ -12,6 +12,8 @@ class ChatService: ObservableObject {
     @Published var showOptionPicker = false
     @Published var selectedOption = ""
 
+    @Published var isWaitingForResponse = false
+
     init(userData: UserData, contactName: String, userInput: String = "") {
         self.userName = userData.username
         self.personaName = contactName
@@ -31,6 +33,8 @@ class ChatService: ObservableObject {
         print("personName: ", self.personaName)
         print("userInput: ", self.userInput)
 
+        self.isWaitingForResponse = true
+
         Task {
             let client = GptChatClient()
             let gptPayload = GptPayload(userName: self.userName, personaName: self.personaName, userInput: self.userInput)
@@ -40,6 +44,7 @@ class ChatService: ObservableObject {
                     if let firstChoiceText = answer.choices.first?.text {
                         self.messages.append(MessageModel(text: firstChoiceText.trimmingCharacters(in: .whitespacesAndNewlines), isCurrentUser: false, id: UUID()))
                     }
+                    self.isWaitingForResponse = false
                 }
             } catch {
                 print("Error occurred: \(error)")

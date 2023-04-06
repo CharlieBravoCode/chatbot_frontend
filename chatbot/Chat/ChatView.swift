@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ChatView: View {
-    @StateObject var vm: ChatService
+    @ObservedObject var vm: ChatService
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var userData: UserData
     
@@ -11,7 +11,7 @@ struct ChatView: View {
     
     init(contact: ChatContact, userData: UserData) {
         self.contact = contact
-        self._vm = StateObject(wrappedValue: ChatService(userData: userData, contactName: contact.name))
+        self._vm = ObservedObject(wrappedValue: ChatService(userData: userData, contactName: contact.name))
     }
     
     var body: some View {
@@ -41,6 +41,9 @@ struct ChatView: View {
                     ForEach(vm.messages) { message in
                         MessageBubbleView(message: message)
                     }
+                    if vm.isWaitingForResponse {
+                        WaitingMessageBubble()
+                    }
                 }
             }
             .padding(.horizontal)
@@ -64,5 +67,29 @@ struct ChatView: View {
             .disabled(vm.newMessage.isEmpty)
         }
         .padding()
+    }
+}
+
+struct WaitingMessageBubble: View {
+    @State private var isAnimating = false
+    
+    var body: some View {
+        HStack {
+            ForEach(0..<3) { index in
+                Circle()
+                    .fill(Color.blue)
+                    .frame(width: 10, height: 10)
+                    .scaleEffect(isAnimating ? 1 : 0)
+                    .animation(Animation.easeInOut(duration: 0.5).repeatForever().delay(0.2 * Double(index)))
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.horizontal)
+        .onAppear {
+            self.isAnimating = true
+        }
+        .onDisappear {
+            self.isAnimating = false
+        }
     }
 }
