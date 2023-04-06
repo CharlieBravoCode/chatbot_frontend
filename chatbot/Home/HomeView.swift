@@ -7,7 +7,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             List(viewModel.conversations) { conversation in
-                NavigationLink(destination: ChatView(contact: conversation.contact)) {
+                NavigationLink(destination: ChatView(contact: conversation.contact, userData: userData)) {
                     ConversationRow(conversation: conversation)
                 }
             }

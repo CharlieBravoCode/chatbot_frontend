@@ -1,5 +1,16 @@
 #  chatbot app
 
+## Next
+ChatView 
+- make userName and personaName be load dynamiclly
+- display a loading symbol while waiting for answer
+- empty the textfield after submit
+- automatically scroll down when new messages arrived
+
+- change API call to chatGPT 4?!
+- put the backend for auth in production on google run
+
+
 ## current bugs
 
 ### 1 

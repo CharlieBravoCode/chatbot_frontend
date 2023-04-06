@@ -1,12 +1,18 @@
 import SwiftUI
 
 struct ChatView: View {
-    @StateObject var vm = ChatService(userName: UserDefaults.userSettings.userName, personaName: UserDefaults.userSettings.personaName)
+    @StateObject var vm: ChatService
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @EnvironmentObject var userData: UserData
     
     let contact: ChatContact
     
     @State private var messageText = ""
+    
+    init(contact: ChatContact, userData: UserData) {
+        self.contact = contact
+        self._vm = StateObject(wrappedValue: ChatService(userData: userData, contactName: contact.name))
+    }
     
     var body: some View {
         VStack {

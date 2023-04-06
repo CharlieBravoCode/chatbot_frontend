@@ -1,7 +1,7 @@
 import Foundation
 
 class ChatService: ObservableObject {
-    var userName: String
+    @Published var userName: String
     var personaName: String
     var userInput: String
 
@@ -12,9 +12,9 @@ class ChatService: ObservableObject {
     @Published var showOptionPicker = false
     @Published var selectedOption = ""
 
-    init(userName: String, personaName: String, userInput: String = "") {
-        self.userName = "Tom"
-        self.personaName = "Steve Jobs"
+    init(userData: UserData, contactName: String, userInput: String = "") {
+        self.userName = userData.username
+        self.personaName = contactName
         self.userInput = userInput
 
         messages.append(MessageModel(text: "Hi \(self.userName)", isCurrentUser: false, id: UUID()))
@@ -45,5 +45,7 @@ class ChatService: ObservableObject {
                 print("Error occurred: \(error)")
             }
         }
+        // Clear the text field
+        newMessage = ""
     }
 }
