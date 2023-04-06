@@ -36,21 +36,31 @@ struct ChatView: View {
             .padding()
             .background(Color.black.opacity(0.05))
 
-            ScrollView {
-                VStack(spacing: 3) {
-                    ForEach(vm.messages) { message in
-                        MessageBubbleView(message: message)
+            ScrollViewReader { proxy in
+                ScrollView {
+                    VStack(spacing: 3) {
+                        ForEach(vm.messages) { message in
+                            MessageBubbleView(message: message)
+                        }
+                        if vm.isWaitingForResponse {
+                            WaitingMessageBubble()
+                        }
                     }
-                    if vm.isWaitingForResponse {
-                        WaitingMessageBubble()
+                    .onChange(of: vm.messages) { _ in
+                        scrollToBottom(proxy)
                     }
                 }
+                .padding(.horizontal)
             }
-            .padding(.horizontal)
             Spacer()
 
-            Spacer()
             textField
+        }
+    }
+
+    func scrollToBottom(_ proxy: ScrollViewProxy) {
+        if let lastMessageId = vm.messages.last?.id {
+            proxy.scrollTo(lastMessageId, anchor: .bottom)
         }
     }
 
@@ -69,6 +79,7 @@ struct ChatView: View {
         .padding()
     }
 }
+
 
 struct WaitingMessageBubble: View {
     @State private var isAnimating = false
