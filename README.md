@@ -2,13 +2,18 @@
 
 ## Next
 ChatView 
+
+- safe the conversation locally and load when returning a chat
+- send up to the last 5 message also with each call
+- change API call to chatGPT 4?!
+- put the backend for auth in production on google run
+
+
+DONE
 - make userName and personaName be load dynamiclly
 - display a loading symbol while waiting for answer
 - empty the textfield after submit
 - automatically scroll down when new messages arrived
-
-- change API call to chatGPT 4?!
-- put the backend for auth in production on google run
 
 
 ## current bugs
