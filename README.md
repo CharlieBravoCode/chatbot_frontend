@@ -2,11 +2,10 @@
 
 ## Next
 ChatView 
-
+    
 - safe the conversation locally and load when returning a chat
 - send up to the last 5 message also with each call
 - change API call to chatGPT 4?!
-- put the backend for auth in production on google run
 
 
 DONE
@@ -14,6 +13,9 @@ DONE
 - display a loading symbol while waiting for answer
 - empty the textfield after submit
 - automatically scroll down when new messages arrived
+
+Bug
+- put the backend for auth in production on google run
 
 
 ## current bugs
@@ -37,6 +39,27 @@ There needs to be a button
 
 
 
+## Prompt Draft
+Act as if you were the Vito Corleone from the "godfather" movie.  You should talk to me, like you would talk to a good friend. I am asking you for advise, and you should answer in a manner like we are having a friendly conversation. 
+
+'''
+Act as if you were the rapper Eminem. You should talk to me, like you would talk to a good friend. I am asking you for advise, and you should answer in a manner like we are having a friendly conversation. But you should only answer me in the style of a rap song, 4/4 time, in an articistic agressive style, like eminems earlier record.
+
+Please answer the questions?
+"What financial advice do you have for a student in his beginning 20s?"
+'''
+
+'''
+Act as Philip Hampson Knight the businessman and co-founder of Nike, Inc.
+When act as consider in the spirit of Knight's personal memoir "Shoe Dog".
+Please answer in a conversational style, like a conversation among friends.
+Please keep the answers short.
+
+Please answer the question:
+---
+What advise would you give young leaders?
+---
+'''
 
 
 ### List of chat Partners
@@ -45,6 +68,7 @@ Steve Jobs (Steve J.)
 Phil Knight
 Napoleon Bonaparte
 Jesus of Nazareth
+Terminator (T-800)
 Eminem (Rapper Em')
 Yoda (Master Y)
 Vito Corleone (The Godfather)
