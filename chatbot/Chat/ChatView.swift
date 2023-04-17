@@ -7,8 +7,6 @@ struct ChatView: View {
     
     let contact: ChatContact
     
-    @State private var messageText = ""
-    
     init(contact: ChatContact, userData: UserData) {
         self.contact = contact
         self._vm = ObservedObject(wrappedValue: ChatService(userData: userData, contactName: contact.name))

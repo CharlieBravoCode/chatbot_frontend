@@ -3,16 +3,16 @@ import SwiftUI
 struct HomeView: View {
     @StateObject private var viewModel = ViewModel()
     @EnvironmentObject var userData: UserData
-
+    
     var body: some View {
         NavigationView {
             List {
                 ForEach(viewModel.conversations) { conversation in
-                    NavigationLink(destination: ChatView(contact: conversation.contact, userData: userData).environmentObject(viewModel)) {
+                    NavigationLink(destination: ChatView(contact: conversation.contact, userData: userData)) {
                         ConversationRow(conversation: conversation)
                     }
                     .background(
-                        NavigationLink("", destination: ChatView(contact: conversation.contact, userData: userData).environmentObject(viewModel))
+                        NavigationLink("", destination: ChatView(contact: conversation.contact, userData: userData))
                             .opacity(0)
                             .onDisappear {
                                 viewModel.updateConversationsOrder(for: conversation.contact.id)

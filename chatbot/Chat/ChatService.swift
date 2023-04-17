@@ -5,7 +5,6 @@ class ChatService: ObservableObject {
     var personaName: String
     var userInput: String
     @Published var lastChatHistory: String = ""
-
     @Published var messages: [MessageModel] = []
     @Published var messageTextFieldPlaceholder: String = "Your question ..."
     @Published var newMessage: String = ""
@@ -87,6 +86,3 @@ class ChatService: ObservableObject {
         }
     }
 }
-
-
-
