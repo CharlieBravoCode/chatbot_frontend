@@ -36,7 +36,7 @@ fileprivate struct RegisterBodyParams: Codable {
 
 class AuthenticationService {
     public func login(_ username: String, _ password: String) async throws -> String {
-        let apiEndpoint = URL(string: "http://127.0.0.1:1234/auth/login")!
+        let apiEndpoint = URL(string: "http://127.0.0.1:8080/auth/login")!
         
         var request = URLRequest(url: apiEndpoint)
         request.httpMethod = "POST"
@@ -63,7 +63,7 @@ class AuthenticationService {
     
     public func registerAccount(_ username: String, _ password: String, _ location: String) async throws -> String {
         // Regular expression checking should be done in the ViewModel of Register
-        let apiEndpoint = URL(string: "http://127.0.0.1:1234/auth/register")!
+        let apiEndpoint = URL(string: "http://127.0.0.1:8080/auth/register")!
         
         var request = URLRequest(url: apiEndpoint)
         

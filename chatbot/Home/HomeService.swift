@@ -16,7 +16,7 @@ fileprivate struct ConversationResponse: Decodable {
 
 class HomeService {
     public func fetchConversations(authToken: String) async throws -> [Conversation] {
-        let apiEndpoint = URL(string: "http://127.0.0.1:1234/conversations")!
+        let apiEndpoint = URL(string: "https://chatbot-backend-chat-ie3g6rdoga-ez.a.run.app/mobile_v1_3JzJkq6mvZ4A2U8BDokUtDKFlV1sVBwl/chat/conversations")!
         var request = URLRequest(url: apiEndpoint)
 
         request.httpMethod = "POST"

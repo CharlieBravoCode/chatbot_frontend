@@ -20,7 +20,7 @@ class SettingsService {
     public func fetchUserData(authToken: String) async throws -> UserData {
         let user_data = UserData()
         
-        let apiEndpoint = URL(string: "http://127.0.0.1:1234/user")!
+        let apiEndpoint = URL(string: "http://127.0.0.1:8080/user")!
         var request = URLRequest(url: apiEndpoint)
         
         request.httpMethod = "POST"
