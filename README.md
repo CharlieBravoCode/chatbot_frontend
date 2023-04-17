@@ -3,9 +3,11 @@
 ## Next
 ChatView 
     
-- safe the conversation locally and load when returning a chat
-- send up to the last 5 message also with each call
-- change API call to chatGPT 4?!
+
+
+- onboarding view (After Registration)
+
+
 
 
 DONE
@@ -13,6 +15,11 @@ DONE
 - display a loading symbol while waiting for answer
 - empty the textfield after submit
 - automatically scroll down when new messages arrived
+- safe the conversation locally and load when returning a chat
+- include an app icon
+- sort last clicked conversation on top
+- send up to the last 5 message also with each call
+- change API call to chatGPT 4?!
 
 Bug
 - put the backend for auth in production on google run
@@ -31,11 +38,6 @@ registering an account leads to errors
 ### onboarding
 
 After the registration their should be a quick on or two window onboarding process
-
-### Start window
-
-The core window should be an overview window (whatsapp style), where you can select from possible heros you can talk to chat window.
-There needs to be a button 
 
 
 
@@ -63,6 +65,16 @@ What advise would you give young leaders?
 
 
 ### List of chat Partners
+
+Steve Jobs (Steve J.)
+Phil Knight
+Terminator (T-800)
+Jesus of Nazareth
+Yoda (Master Y)
+Eminem (Rapper Em')
+Christian God of the old testment
+Oprah Winfrey
+
 
 Steve Jobs (Steve J.)
 Phil Knight

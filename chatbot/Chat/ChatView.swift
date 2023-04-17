@@ -51,6 +51,11 @@ struct ChatView: View {
                     }
                 }
                 .padding(.horizontal)
+                .onAppear {
+                    DispatchQueue.main.async {
+                        scrollToBottom(proxy)
+                    }
+                }
             }
             Spacer()
 
@@ -79,7 +84,6 @@ struct ChatView: View {
         .padding()
     }
 }
-
 
 struct WaitingMessageBubble: View {
     @State private var isAnimating = false

@@ -6,9 +6,18 @@ struct HomeView: View {
 
     var body: some View {
         NavigationView {
-            List(viewModel.conversations) { conversation in
-                NavigationLink(destination: ChatView(contact: conversation.contact, userData: userData)) {
-                    ConversationRow(conversation: conversation)
+            List {
+                ForEach(viewModel.conversations) { conversation in
+                    NavigationLink(destination: ChatView(contact: conversation.contact, userData: userData).environmentObject(viewModel)) {
+                        ConversationRow(conversation: conversation)
+                    }
+                    .background(
+                        NavigationLink("", destination: ChatView(contact: conversation.contact, userData: userData).environmentObject(viewModel))
+                            .opacity(0)
+                            .onDisappear {
+                                viewModel.updateConversationsOrder(for: conversation.contact.id)
+                            }
+                    )
                 }
             }
             .navigationTitle("Conversations")
@@ -23,15 +32,17 @@ struct HomeView: View {
             }
             .onAppear {
                 viewModel.initUserData(userData)
-                Task {
-                    viewModel.loadSampleConversations()
-                    await viewModel.getConversations()
+                if !viewModel.hasLoadedConversations {
+                    Task {
+                        viewModel.loadSampleConversations()
+                        await viewModel.getConversations()
+                        viewModel.setHasLoadedConversations(true)
+                    }
                 }
             }
         }
     }
 }
-
 
 struct ConversationRow: View {
     let conversation: Conversation

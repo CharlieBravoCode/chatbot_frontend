@@ -14,6 +14,7 @@ class GptChatClient {
             URLQueryItem(name: "personaName", value: data.gptPayload.personaName),
             URLQueryItem(name: "userInput", value: data.gptPayload.userInput),
             URLQueryItem(name: "chatType", value: "INITIAL"),
+            URLQueryItem(name: "lastChatHistory", value: data.gptPayload.lastChatHistory) // Add this line
         ]
         
         guard let finalURL = urlComponents?.url else {
@@ -45,6 +46,7 @@ struct GptPayload: Encodable {
     var userName: String
     var personaName: String
     var userInput: String
+    var lastChatHistory: String
 }
 
 struct ChatCreationData {
