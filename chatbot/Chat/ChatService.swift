@@ -20,6 +20,7 @@ class ChatService: ObservableObject {
         self.userInput = userInput
 
         messages.append(MessageModel(text: "Hi \(self.userName)", isCurrentUser: false, id: UUID()))
+        loadChatHistory()
     }
 
     func onSubmit() {
@@ -45,6 +46,7 @@ class ChatService: ObservableObject {
                         self.messages.append(MessageModel(text: firstChoiceText.trimmingCharacters(in: .whitespacesAndNewlines), isCurrentUser: false, id: UUID()))
                     }
                     self.isWaitingForResponse = false
+                    self.saveChatHistory()
                 }
             } catch {
                 print("Error occurred: \(error)")
@@ -52,5 +54,22 @@ class ChatService: ObservableObject {
         }
         // Clear the text field
         newMessage = ""
+    }
+
+    private func saveChatHistory() {
+        let encoder = JSONEncoder()
+        if let encodedData = try? encoder.encode(messages) {
+            UserDefaults.standard.set(encodedData, forKey: "\(userName)-\(personaName)-chatHistory")
+        }
+    }
+
+    private func loadChatHistory() {
+        let decoder = JSONDecoder()
+        if let data = UserDefaults.standard.data(forKey: "\(userName)-\(personaName)-chatHistory"),
+           let decodedData = try? decoder.decode([MessageModel].self, from: data) {
+            messages = decodedData
+        } else {
+            print("Error obtaining conversations: The data couldn’t be read because it is missing.")
+        }
     }
 }
