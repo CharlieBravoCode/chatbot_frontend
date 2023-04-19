@@ -7,6 +7,11 @@ struct LoginView: View {
     
     var body: some View {
         VStack {
+            Image("load_image")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200, height: 200)
+                .padding(.bottom, 20)
             PageHeader(titleName: "Login")
             CaptionedTextField(caption: "Username", text: $viewModel.username, placeholder: "Enter username")
                 .padding([.top], 20)
@@ -37,5 +42,3 @@ struct LoginView_Previews: PreviewProvider {
         LoginView()
     }
 }
-
-
