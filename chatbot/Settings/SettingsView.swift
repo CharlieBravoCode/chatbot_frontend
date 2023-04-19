@@ -19,10 +19,6 @@ struct SettingsView: View {
             HStack {
                 VStack(alignment: .leading, spacing: 20) {
                     HStack {
-                        Text("User ID:")
-                            .font(.system(size: 20, weight: .bold))
-                        Text("\(viewModel.user_id)")
-                            .font(.system(size: 20))
                     }
                     HStack {
                         Text("Username:")
@@ -31,7 +27,7 @@ struct SettingsView: View {
                             .font(.system(size: 20))
                     }
                     HStack {
-                        Text("Location:")
+                        Text("Given Name:")
                             .font(.system(size: 20, weight: .bold))
                         Text("\(viewModel.location)")
                             .font(.system(size: 20))

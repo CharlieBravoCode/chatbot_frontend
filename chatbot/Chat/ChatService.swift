@@ -19,7 +19,7 @@ class ChatService: ObservableObject {
         self.userInput = userInput
         self.lastChatHistory = lastChatHistory
 
-        messages.append(MessageModel(text: "Hi \(self.userName)", isCurrentUser: false, id: UUID()))
+        messages.append(MessageModel(text: "Hi!", isCurrentUser: false, id: UUID()))
         loadChatHistory()
     }
 

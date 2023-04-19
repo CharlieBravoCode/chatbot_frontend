@@ -4,9 +4,8 @@
 ChatView 
     
 
-
-- onboarding view (After Registration)
-
+- nach dem umbennen der variablen funntionieren die conversation rows 
+- in registration and the db, replace location with SurName
 
 
 
