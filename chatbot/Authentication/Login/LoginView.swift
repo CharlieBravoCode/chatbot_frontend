@@ -12,7 +12,7 @@ struct LoginView: View {
                 .scaledToFit()
                 .frame(width: 200, height: 200)
                 .padding(.bottom, 20)
-            PageHeader(titleName: "Login")
+            PageHeader(titleName: "HeroChat")
             CaptionedTextField(caption: "Username", text: $viewModel.username, placeholder: "Enter username")
                 .padding([.top], 20)
             ViewableSecureField(caption: "Password", text: $viewModel.password, placeholder: "Enter password")

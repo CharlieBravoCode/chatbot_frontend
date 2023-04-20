@@ -5,7 +5,7 @@ struct RegisterView: View {
     @EnvironmentObject var userData: UserData // Obtain EnvironmentObject user data
     var body: some View {
         VStack {
-            PageHeader(titleName: "Sign Up")
+            PageHeader(titleName: "")
             CaptionedTextField(caption: "Username", text: $viewModel.username, placeholder: "Enter a username")
             ViewableSecureField(caption: "Password", text: $viewModel.password, placeholder: "Enter a password")
             ViewableSecureField(caption: "Confirm Password", text: $viewModel.confirmedPassword, placeholder: "Enter password again")
