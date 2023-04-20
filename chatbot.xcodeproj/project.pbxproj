@@ -98,6 +98,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5981412C29F13E69002EC297 /* Readme_files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Readme_files;
+			sourceTree = "<group>";
+		};
 		5991DC6029D48E1100D5D0D4 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +125,7 @@
 		5991DC6B29D48E1100D5D0D4 /* chatbot */ = {
 			isa = PBXGroup;
 			children = (
+				5981412C29F13E69002EC297 /* Readme_files */,
 				59A4474D29DC2EE000ED477A /* UserDefaults */,
 				59D7C6CA29D6CCAA009FB9D3 /* Models */,
 				59D7C6D029D6CD8C009FB9D3 /* Components */,
