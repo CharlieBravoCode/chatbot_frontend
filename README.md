@@ -39,17 +39,25 @@ iOS 15 or later
 
 ### Installation (e.g., cloning the repository, installing dependencies)
 
-Clone the repository:
+The entire system requires three repositories to work. 
+Two of those need to run locally, one is already deployed.
 
-iOS App
+Clone the following repositories:
 
-'''
-
+chatbot_frontend - iOS App
+```bash
 git clone https://github.com/CharlieBravoCode/chatbot_frontend
+```
 
-'''
+chatbot_backend_authlogin - node.js app
+```bash
+https://github.com/CharlieBravoCode/chatbot_backend_authlogin
+```
 
-
+(optional) chatbot_backend_chat - node.js app
+```bash
+https://github.com/CharlieBravoCode/chatbot_backend_chat
+```
 
 
 ### Configuration (e.g., setting up environment variables, API keys)
@@ -57,9 +65,24 @@ git clone https://github.com/CharlieBravoCode/chatbot_frontend
 No configuration needed.
 ### Running the app (e.g., launching the app on a local server or emulator)
 
+#### Step 1. chatbot_backend_authlogin
+
+Run the chatbot_backend_authlogin
+
+```bash
+npm install
+tsc
+node index.js 
+```
+
+#### Step 2. chatbot_backend_authlogin
+
+Run the chatbot_frontend
+
 Open the HeroChat.xcodeproj file in Xcode.
-Choose a simulator or a connected device to run the app.
+Choose a simulator
 Press the Play button or use the shortcut Cmd + R to build and run the app.
+
 ## A guide on how to use the app, including:
 
 ### Signing up and logging in
