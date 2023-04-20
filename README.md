@@ -91,7 +91,7 @@ When the app launches, you will be presented with the authentication view.
 If you're a new user, tap on "Sign Up" to create an account. Enter your email, username, and password, and tap "Sign Up" again to complete the registration.
 If you already have an account, tap on "Log In" and enter your email and password. Then, tap "Log In" again to access the app.
 
-![Login View](/Assets/readme/LoginView.png)
+![Login View](/readme/ChatVIew 1.png)
 
 ### Choosing a persona to chat with
 
