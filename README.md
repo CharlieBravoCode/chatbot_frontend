@@ -1,9 +1,3 @@
- current bugs
-
-registering an account leads to errors
-- eiter because capital letters are not supported in usernames
-- or certain inputValidators in the frontend for the password are not handled well in processing in the backend, before hashed.
-
 # Chatbot app - HeroChat
 
 ## Introduction
