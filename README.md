@@ -175,3 +175,18 @@ When a new user is created via the app, the registration process is completed th
 ### Sort of Conversation List
 In the HomeView, the list of conversations is supposed to be sorted based on the most recent conversations appearing at the top. Unfortunately, this functionality does not work at the moment. The current implementation introduces an additional bug, where if the user swipes down in the HomeView and the ConversationRow is updated, the list is randomly sorted. This results in an inconsistent and confusing user experience.
 
+## Cyber Security Measures
+
+### Implemented Measures
+
+1. Secure authentication: The app uses a secure authentication system to protect user credentials and data.
+2. Input validation: The app validates user input to prevent code injection and other malicious attacks.
+3. Secure storage: User conversations are stored on the device and are not accessible to unauthorized users.
+
+### Current Flaws and Cyber Security Threats
+
+1. Weak password policy: The app does not enforce a strong password policy for user accounts, which could lead to weak passwords being used and increasing the risk of account breaches.
+2. Missing rate limiting: The app does not implement rate limiting on API requests, which could make it susceptible to brute-force attacks and denial of service (DoS) attacks.
+3. Insufficient logging and monitoring: The app does not have a comprehensive logging and monitoring system in place, making it difficult to detect and respond to security incidents in a timely manner.
+4. Insecure API endpoints: Some of the API endpoints used by the app may not be properly secured, allowing unauthorized users to access sensitive data or perform actions without proper authentication.
+
