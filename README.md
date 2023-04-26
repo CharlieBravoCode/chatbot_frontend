@@ -2,7 +2,7 @@
 
 ## Introduction
 
-HeroChat is an iOS chatbot app developed using SwiftUI that allows users to interact with famous personas, both real and fictional. The app features a sleek and easy-to-use interface, complete with an authentication system, integration with the OpenAI backend, and a selection of personas to chat with.
+HeroChat is an iOS chatbot app developed using SwiftUI that allows users to interact with famous personas, both real and fictional. The app features a easy-to-use interface, complete with an authentication system, integration with the OpenAI backend, and a selection of personas to chat with.
 
 ## Comprehensive list of the main features
 
